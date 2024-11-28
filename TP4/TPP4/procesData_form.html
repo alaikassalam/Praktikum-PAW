@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Data Pribadi</title>
+  </head>
+  <body>
+    <h2>Form Data Pribadi</h2>
+    <form action="procesData.php" method="GET">
+      <!-- Username -->
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" required /><br /><br />
+
+      <!-- Email -->
+      <label for="email">Email :</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <!-- Password -->
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <!-- alamat -->
+      <label for="alamat">Alamat:</label><br />
+      <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea
+      ><br /><br />
+
+      <!-- semester Dropdown -->
+      <label for="semester">Semester:</label><br />
+      <select id="semester" name="semester">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option></select
+      ><br /><br />
+      <!-- Hidden Field for Country -->
+      <input type="hidden" name="country" value="Indonesia" />
+      <!-- kelamin Radio Buttons -->
+      <label for="kelamin">Kelamin:</label><br />
+      <input type="radio" id="laki-laki" name="kelamin" value="laki-laki" />
+      <label for="laki-laki">laki-laki</label><br />
+      <input type="radio" id="perempuan" name="kelamin" value="perempuan" />
+      <label for="perempuan">perempuan</label><br /><br />
+
+      <!-- hobi -->
+      <label for="hobi">Hobi:</label><br />
+      <input
+        type="checkbox"
+        id="mancing"
+        name="hobi[]"
+        value="mancing"
+        checked
+      />
+      <label for="mancing">mancing</label><br />
+      <input type="checkbox" id="tidur" name="hobi[]" value="tidur" />
+      <label for="tidur">tidur</label><br />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
